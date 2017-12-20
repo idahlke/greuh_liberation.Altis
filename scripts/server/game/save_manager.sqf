@@ -193,6 +193,10 @@ if ( !isNil "greuh_liberation_savegame" ) then {
 			if ( _nextclass == FOB_typename ) then {
 				_nextbuilding addEventHandler ["HandleDamage", { 0 }];
 			};
+			
+			if ( _nextclass in support_vehicles ) then {
+					_add = _nextbuilding spawn GOM_fnc_addAircraftLoadoutToObject;
+				};
 		};
 
 	} foreach buildings_to_save;

@@ -40,7 +40,7 @@ do_load_box = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\d
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\init_arsenal.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\offload_diag.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\permissions_warning.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\resupply_manager.sqf";
+//[] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\resupply_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\secondary_jip.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\stay_leader.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\stop_renegade.sqf";

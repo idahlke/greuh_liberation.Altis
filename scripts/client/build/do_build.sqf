@@ -250,6 +250,10 @@ while { true } do {
 				if ( _classname == FOB_box_typename ) then {
 					[ [_vehicle, 3000 ] , "F_setMass" ] call BIS_fnc_MP;
 				};
+				
+				if ( _classname in support_vehicles ) then {
+					_add = _vehicle spawn GOM_fnc_addAircraftLoadoutToObject;
+				};
 
 				sleep 0.3;
 				_vehicle allowDamage true;
@@ -259,11 +263,12 @@ while { true } do {
 					_vehicle addEventHandler ["HandleDamage", { 0 }];
 				};
 
-				if(buildtype != 6) then {
 					_vehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
+				if(buildtype != 6) then {
 					{ _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _vehicle);
 
 				};
+				
 			};
 
 			if ( _idactcancel != -1 ) then {

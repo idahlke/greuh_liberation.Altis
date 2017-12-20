@@ -7,7 +7,7 @@ allowFunctionsLog = 0;
 
 loadScreen="res\liberation.jpg";
 onLoadMission = $STR_MISSION_TITLE;
-author = "[GREUH] Zbug, [GREUH] McKeewa";
+author = "[GREUH] Zbug, [GREUH] McKeewa, with edits by [TG] iantron";
 onLoadName = $STR_MISSION_TITLE;
 
 joinUnassigned = 0;
@@ -34,3 +34,23 @@ class CfgDebriefing
 		pictureBackground = "";
 	};
 };
+
+//GOM_fnc_aircraftLoadout V1.34 made by Grumpy Old Man 17-5-2017
+
+class CfgFunctions
+{
+
+	#include "scripts\GOM\functions\GOM_fnc_functions.hpp"
+
+};
+
+
+class CfgCommunicationMenu
+{
+
+	#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
+
+};
+
+#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
+#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"

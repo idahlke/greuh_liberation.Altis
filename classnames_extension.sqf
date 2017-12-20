@@ -71,7 +71,7 @@ air_vehicles_extension = [
 	["greuh_aw159_t",0,0,12],
 	["greuh_aw159_a",0,50,12],
 	["I_Heli_light_03_unarmed_F",0,0,12],
-	["I_Heli_light_03_F",0,50,12],
+	["I_Heli_light_03_dynamicLoadout_F",0,400,12],
 	["JNS_Skycrane_BLU_Black",0,0,18],
 	["RHS_CH_47F",0,20,20],
 	["greuh_eh101_gr",0,0,25],
@@ -88,16 +88,15 @@ air_vehicles_extension = [
 	["sab_C130_J",0,0,30],
 	["usaf_f22",0,500,75],
 	["USAF_F35A",0,600,75],
-	["I_Plane_Fighter_03_AA_F",0,50,30],
-	["I_Plane_Fighter_03_CAS_F",0,100,30],
+	["I_Plane_Fighter_03_dynamicLoadout_F",0,800,30],
 	["B_T_VTOL_01_infantry_F", 10, 0, 50],
 	["B_T_VTOL_01_vehicle_F", 10, 0, 50],
-	["B_T_VTOL_01_armed_F", 10, 75, 50],
-	["B_Plane_Fighter_01_F", 10, 200, 50],
-	["B_Plane_Fighter_01_Stealth_F", 15, 200, 50],
-	["I_Plane_Fighter_04_F", 10, 150, 40],
-	["B_T_UAV_03_F", 10, 200, 50],
-	["I_C_Plane_Civil_01_F", 0, 0, 10]
+	["B_T_VTOL_01_armed_F", 10, 500, 50],
+	["B_Plane_Fighter_01_F", 10, 1000, 50],
+	["B_Plane_Fighter_01_Stealth_F", 15, 1000, 50],
+	["I_Plane_Fighter_04_F", 10, 800, 40],
+	["B_T_UAV_03_dynamicLoadout_F", 10, 400, 50],
+	["I_C_Plane_Civil_01_F", 0, 0, 10],
 ];
 
 static_vehicles_overwrite = false;
@@ -107,6 +106,8 @@ static_vehicles_extension = [
 
 buildings_overwrite = false;
 buildings_extension = [
+	["Land_LightHouse_F",0,0,0],
+	["Land_TentHangar_V1_F",0,0,0]
 
 ];
 

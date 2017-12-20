@@ -75,14 +75,14 @@ if ( heavy_vehicles_overwrite ) then { heavy_vehicles = heavy_vehicles_extension
 
 air_vehicles = [
 	["B_Heli_Light_01_F",0,0,10],
-	["B_Heli_Light_01_armed_F",0,30,10],
+	["B_Heli_Light_01_dynamicLoadout_F",0,300,10],
 	["B_Heli_Transport_01_F",0,20,12],
 	["B_Heli_Transport_03_F",0,20,15],
-	["B_Heli_Attack_01_F",0,150,30],
-	["B_Plane_CAS_01_F",0,500,50],
+	["B_Heli_Attack_01_dynamicLoadout_F",0,500,30],
+	["B_Plane_CAS_01_dynamicLoadout_F",0,1000,50],
 	["B_UAV_01_F",0,0,5],
 	["B_UAV_02_F",0,250,20],
-	["B_UAV_02_CAS_F",0,250,20]
+	["B_UAV_02_dynamicLoadout_F",0,300,20]
 ];
 if ( isNil "air_vehicles_extension" ) then { air_vehicles_extension = [] };
 if ( isNil "air_vehicles_overwrite" ) then { air_vehicles_overwrite = false };
